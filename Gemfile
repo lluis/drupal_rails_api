@@ -35,6 +35,9 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'active_model_serializers', '~> 0.10.0.rc2'
 gem 'pg'
-gem 'wirble'
-gem 'awesome_print'
 gem 'safe_attributes'
+
+group :development, :test do
+  gem 'wirble'
+  gem 'awesome_print'
+end
