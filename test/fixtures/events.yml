@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  date: 2016-02-04 19:25:17
+  periodic: false
+  hall: 1
+  description: MyText
+  cicle: 1
+  url: MyString
+
+two:
+  title: MyString
+  date: 2016-02-04 19:25:17
+  periodic: false
+  hall: 1
+  description: MyText
+  cicle: 1
+  url: MyString
