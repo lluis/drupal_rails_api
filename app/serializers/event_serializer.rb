@@ -1,3 +1,3 @@
 class EventSerializer < ActiveModel::Serializer
-  attributes Event::DRUPAL_RAILS.values.collect {|hash| hash.values }.flatten
+  attributes :id, :title, :description, :date
 end

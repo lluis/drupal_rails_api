@@ -3,8 +3,19 @@ class EventsController < ApplicationController
 
   # GET /events
   def index
-    #@events = Event.all
-    @events = [Event.find(345)]
+    @events = Event.all
+
+    if params[:id]
+      @events = @events.where(id: params[:id])
+    end
+
+    if params[:from]
+      @events = @events.where("date >= ?", params[:from])
+    end
+
+    if params[:to]
+      @events = @events.where("date <= ?", params[:to])
+    end
 
     render json: @events
   end
