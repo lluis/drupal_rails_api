@@ -22,3 +22,6 @@ test:
 
 production:
   <<: *default
+  user: <%= ENV['DRUPAL_RAILS_API_DBUSER'] %>
+  password: <%= ENV['DRUPAL_RAILS_API_DBPASSWD'] %>
+  host: localhost
