@@ -6,4 +6,7 @@ Rails.application.routes.draw do
 
   # Serve websocket cable requests in-process
   # mount ActionCable.server => '/cable'
+
+  # catch all routing errors
+  match '*path', via: :all, to: 'application#error404'
 end
