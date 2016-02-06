@@ -41,3 +41,7 @@ group :development, :test do
   gem 'wirble'
   gem 'awesome_print'
 end
+
+group :production do
+  gem 'unicorn'
+end
