@@ -17,7 +17,7 @@ class EventsController < ApplicationController
       @events = @events.where("date <= ?", params[:to])
     end
 
-    render json: @events
+    render json: @events.order(:date)
   end
 
   # GET /events/1
